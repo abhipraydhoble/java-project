@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
+
+<div class = "container">
+	<form action="register" method="post">
+	<h1>Registration</h1>
+	<div class="content">
+	<div class="input-box">
+		<label for="fname">Full Name</label>
+		<input type="text" placeholder="Enter Full Name" name="Fname" required>
+	</div>
+	<div class="input-box">
+		<label for="date">Date Of Birth</label>
+		<input type="Date" placeholder="Enter Date Of Birth" name="DOB" required>
+	</div>
+	<div class="row">
+		<div class="input-box">
+			<label for="name">Address</label>
+			<input type="text" placeholder="Enter Address" name="address" required>
+		</div>
+	</div>
+	<div class="input-box">
+		<label for="gender">Gender</label>
+		<input type="text" placeholder="Enter Gender" name="gender" required>
+	</div>
+	<div class="input-box">
+		<label for="city">City</label>
+		<input type="text" placeholder="Enter City" name="city" required>
+	</div>
+	<div class="input-box">
+		<label for="state">State</label>
+		<input type="text" placeholder="Enter State" name="state" required>
+	</div>
+	<div class="input-box">
+		<label for="uname">User Id</label>
+		<input type="text" placeholder="Enter User Id" name="user" required>
+	</div>
+	<div class="input-box">
+		<label for="password">Password</label>
+		<input type="password" placeholder="Enter Password" name="password" required>
+	</div>
+	<div class="input-box">
+		<label for="re-password">Re-Password </label>
+		<input type="password" placeholder="Enter Re-Password" name="re-password" required>
+	</div>
+	</div>
+	<div class="button-container">
+	<button type="submit">Register</button>
+	</div>
+	<div class="login">
+		**If you have account, please 
+	<a href="login.jsp">login now</a><b>**</b>
+	</div>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<%
+	if(session.getAttribute("name")==null){
+		response.sendRedirect("login.jsp");
+	}
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome To Our Page</title>
+<link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+<header>
+<div class="Welcome">
+	<figure>
+		<img src="img/Bird.png" alt="Bird image">
+	</figure>
+	<ul class="navbar">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="login.jsp">Log Out</a></li>
+	</ul>
+</div>
+<div class="welcome-text">
+	<h1>WELCOME TO OUR WEBSITE</h1>
+	<a href="#">Contact Us</a>
+</div>
+</header>
+</body>
+</html>
